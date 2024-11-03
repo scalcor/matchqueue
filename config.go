@@ -20,9 +20,6 @@ type Config struct {
 	MaxNumToCreateGroup    int `json:"max_num_to_create_group"`
 	NumPlayerToCreateGroup int `json:"num_player_to_create_group"`
 	NumRoundToCreateGroup  int `json:"num_round_to_create_group"`
-
-	// notification
-	NotifyThresholdWait int `json:"notify_threshold_wait"`
 }
 
 var defaultModRatio = []float64{1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.6, 0.4, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2}
@@ -44,6 +41,5 @@ func DefaultConfig() *Config {
 		MaxNumToCreateGroup:    16,
 		NumPlayerToCreateGroup: 40,
 		NumRoundToCreateGroup:  2,
-		NotifyThresholdWait:    10,
 	}
 }
